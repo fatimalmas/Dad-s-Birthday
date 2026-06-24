@@ -551,11 +551,7 @@ function revealLetter(){
   lines.forEach(l=>{ l.style.animationDelay=d+'ms'; l.classList.add('write'); d+=900; });
   sign.style.animationDelay=d+'ms'; sign.classList.add('write');
   setTimeout(burst,d+400);
-}
-
-/* prevent iOS rubber-band (allow scroll only inside letter) */
-  document.addEventListener('touchmove',e=>{ if(!e.target.closest('.letter')) e.preventDefault(); },{passive:false});
-</script>
-
+};
+  
 </body>
 </html>
