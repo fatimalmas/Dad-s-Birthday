@@ -22,6 +22,12 @@
     --fdisplay:'Fredoka',-apple-system,system-ui,sans-serif;
     --fhand:'Patrick Hand',-apple-system,system-ui,cursive;
   }
+  <audio id="bgMusic" src="song.mp3" loop></audio>
+<script>
+  document.body.addEventListener('click', () => {
+    document.getElementById('bgMusic').play();
+  }, { once: true });
+</script>
 
   *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 
