@@ -557,11 +557,5 @@ function revealLetter(){
   document.addEventListener('touchmove',e=>{ if(!e.target.closest('.letter')) e.preventDefault(); },{passive:false});
 </script>
 
-<audio id="bgMusic" src="song.mp3" loop></audio>
-<script>
-  document.body.addEventListener('click', () => {
-    document.getElementById('bgMusic').play();
-  }, { once: true });
-</script>
 </body>
 </html>
