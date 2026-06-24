@@ -22,12 +22,6 @@
     --fdisplay:'Fredoka',-apple-system,system-ui,sans-serif;
     --fhand:'Patrick Hand',-apple-system,system-ui,cursive;
   }
-  <audio id="bgMusic" src="song.mp3" loop></audio>
-<script>
-  document.body.addEventListener('click', () => {
-    document.getElementById('bgMusic').play();
-  }, { once: true });
-</script>
 
   *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 
@@ -558,7 +552,12 @@ function revealLetter(){
   sign.style.animationDelay=d+'ms'; sign.classList.add('write');
   setTimeout(burst,d+400);
 }
-
+<audio id="bgMusic" src="song.mp3" loop></audio>
+<script>
+  document.body.addEventListener('click', () => {
+    document.getElementById('bgMusic').play();
+  }, { once: true });
+</script>
 /* prevent iOS rubber-band (allow scroll only inside letter) */
 document.addEventListener('touchmove',e=>{ if(!e.target.closest('.letter')) e.preventDefault(); },{passive:false});
 </script>
